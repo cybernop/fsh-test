@@ -19,5 +19,7 @@ jobs:
         shell: bash
       - name: Fill FHIR cache
         uses: cybernop/fill-fhir-cache@v1
+        with:
+          project-dir: "."
       - run: sushi
         shell: bash
