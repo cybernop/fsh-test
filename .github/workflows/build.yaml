@@ -17,5 +17,7 @@ jobs:
           node-version: "18"
       - run: npm install -g fsh-sushi
         shell: bash
+      - name: Fill FHIR cache
+        uses: cybernop/fill-fhir-cache@v1
       - run: sushi
         shell: bash
